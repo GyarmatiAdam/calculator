@@ -11,6 +11,11 @@ for(let i = 0; i < btns.length; i++){
     });
 }
 
+window.addEventListener("error", handleError, true);
+function handleError(){
+    alert('Wrong value');
+}
+
 equalBtn.addEventListener('click', function(){
     if(screen.value === ''){
         alert('input field is empty');
